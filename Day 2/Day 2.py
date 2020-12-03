@@ -1,4 +1,6 @@
-input_set = open('Day2.txt').read().splitlines()
+import os
+text_file = os.path.basename(__file__).replace('.py','.txt')
+input_set = open(text_file).read().splitlines()
 
 def solution_one():
 
@@ -11,7 +13,7 @@ def solution_one():
 			valid += 1
 	return valid
 
-print(solution_one())
+print("Solution 1: {}".format(solution_one()))
 
 
 def solution_two():
@@ -23,5 +25,5 @@ def solution_two():
 			valid += 1
 	return valid
 
-print(solution_two())
+print("Solution 2: {}".format(solution_two()))
 
