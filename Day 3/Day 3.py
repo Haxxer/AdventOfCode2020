@@ -1,6 +1,9 @@
 import os
 from functools import reduce
-text_file = os.path.basename(__file__).replace('.py','.txt')
+text_file = os.path.join(
+	os.path.dirname(__file__),
+	os.path.basename(__file__).replace('.py','.txt')
+)
 input_set = open(text_file).read().splitlines()
 
 def solution_one():
