@@ -11,8 +11,8 @@ solution_one = sum([len(set(people.replace('\n', ''))) for people in input_set.s
 print("Solution one: {}".format(solution_one))
 
 
-total = sum([len(reduce(lambda a,b: set(a).intersection(b), people.split('\n'))) for people in input_set.split('\n\n')])
+solution_two = sum([len(reduce(lambda a,b: set(a).intersection(b), people.split('\n'))) for people in input_set.split('\n\n')])
 
-print("Solution two: {}".format(total))
+print("Solution two: {}".format(solution_two))
 
 
